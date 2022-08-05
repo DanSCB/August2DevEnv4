@@ -21,10 +21,10 @@ let package = Package(
         .target(
             name: "Aug2SDK",
             dependencies: [],
-	    path: "Aug2SDK/Sources/Aug2SDK"),
+	    path: "Aug2SDK/PublishedSDK/Sources/Aug2SDK"),
         .testTarget(
             name: "Aug2SDKTests",
             dependencies: ["Aug2SDK"],
-	    path: "Tests/Sources/Aug2SDKTests"),
+	    path: "Aug2SDK/PublishedSDK/Sources/Aug2SDKTests"),
     ]
 )
