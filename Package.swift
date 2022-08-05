@@ -20,9 +20,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Aug2SDK",
-            dependencies: []),
+            dependencies: [],
+	    path: "Aug2SDK/Sources/Aug2SDK"),
         .testTarget(
             name: "Aug2SDKTests",
-            dependencies: ["Aug2SDK"]),
+            dependencies: ["Aug2SDK"],
+	    path: "Tests/Sources/Aug2SDKTests"),
     ]
 )
